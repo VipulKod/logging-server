@@ -17,4 +17,4 @@ A simple logging server build with GoLang and other standard Go libraries
 * Central Buffer: Implemented as a channel, the central buffer receives logs from all components. This buffer temporarily holds log messages, preventing any loss during transmission.
 * Also there is a sepration of queue based on the priority levels such as "INFO", "WARN", "ERROR" and each has different priority based on the urgency.
 * Continuous Monitoring and Processing: Additional goroutines monitor the central buffer. Upon reaching a predetermined threshold or after a specific interval, these goroutines process the logs (such as aggregating, filtering) and then forward them to a persistent storage system or a log analysis tool.
-* Persistent Storage or Analysis Tool: The processed logs are finally stored in a database or sent to a log analysis tool for further examination and analysis.
+* Persistent Storage or Analysis Tool: The processed logs are finally stored in a database.
